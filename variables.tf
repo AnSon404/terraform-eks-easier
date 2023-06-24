@@ -1,2 +1,2 @@
-varible "aws_access_key_id" {}
-varible "aws_secret_access_key" {}
+variable "aws_access_key_id" {}
+variable "aws_secret_access_key" {}
