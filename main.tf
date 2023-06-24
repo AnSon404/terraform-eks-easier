@@ -6,8 +6,8 @@ provider "aws" {
 resource "aws_instance" "web" {
   ami="ami-0a3f016a475b150ec"
   instance_type="t3.micro"
-  subnet_id="	subnet-00bfa6059ac835a99"
-  vpc_security_group_ids="sg-02678b7e94fe2f255"
+  subnet_id="subnet-00bfa6059ac835a99"
+  security_groups = [ "sg-02678b7e94fe2f255" ]
   tags={
     Name="anson-terraform"
   }
